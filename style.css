@@ -1,0 +1,19 @@
+body, .header, .hero-container, .links {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    justify-items: center;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.links {
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+}
