@@ -1,14 +1,61 @@
-body, .header, .hero-container, .links {
+body, .header, .hero-container, .information-container, 
+.quote-container, .information-items, .information-item, 
+.links {
     display: flex;
 }
 
-body {
+body, .information-container, .information-item, .quote-container {
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.quote-container {
+    background-color: rgb(212, 212, 212);
+    height: 200px;
+    align-items: center;
+}
+
+.quote {
+    width: 600px;
+    font-size: 20px;
+}
+
+.quote-credit {
+    margin-left: 25%;
+}
+
+.information-items {
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.information, .information-item {
+    text-align: center;
+}
+
+.information-item {
+    flex-basis: 140px;
+}
+
+.header, .hero-container {
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 34, 75);
+    padding: 0 350px;
 }
 
 .header {
-    justify-content: space-between;
+    height: 50px;   
+}
+
+.header, .hero-container * {
+    color: white;
+}
+
+.header-logo {
+    flex-grow: 0;
 }
 
 .links {
