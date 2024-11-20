@@ -1,10 +1,11 @@
 body, .header, .hero-container, .information-container, 
 .quote-container, .information-items, .information-item, 
-.links {
+.links, .call-to-action-container {
     display: flex;
 }
 
-body, .information-container, .information-item, .quote-container {
+body, .information-container, .information-item, .quote-container,
+    .call-to-action-container {
     flex-direction: column;
     justify-content: center;
     margin: 0;
@@ -48,6 +49,18 @@ body, .information-container, .information-item, .quote-container {
 
 .header {
     height: 50px;   
+}
+
+.call-to-action-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action {
+    background-color: blue;
+    width: 700px;
+    height: 100px;
+    margin: 50px;
 }
 
 .header, .hero-container * {
