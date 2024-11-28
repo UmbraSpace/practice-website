@@ -47,8 +47,20 @@ body, .information-container, .information-item, .quote-container,
     padding: 0 350px;
 }
 
+.hero-container {
+    height: 400px;
+}
+
 .header {
     height: 50px;   
+}
+
+.footer {
+    background-color: rgb(25, 34, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
 }
 
 .call-to-action-container {
