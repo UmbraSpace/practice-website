@@ -26,9 +26,6 @@ body, .information-item, .quote-container,
     font-weight: 900;
 }
 
-.information-items {
-}
-
 .quote-container {
     background-color: rgb(212, 212, 212);
     height: 370px;
