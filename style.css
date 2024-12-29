@@ -1,6 +1,6 @@
 body, .header, .hero-container, .information-container, 
 .quote-container, .information-items, .information-item, 
-.links, .call-to-action-container {
+.links, .call-to-action-container, .call-to-action {
     display: flex;
 }
 
@@ -31,13 +31,13 @@ body, .information-item, .quote-container,
 
 .quote-container {
     background-color: rgb(212, 212, 212);
-    height: 200px;
+    height: 370px;
     align-items: center;
 }
 
 .quote {
     width: 600px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .quote-credit {
@@ -52,6 +52,7 @@ body, .information-item, .quote-container,
 .information-items {
     justify-content: center;
     flex-shrink: 1;
+    gap: 30px;
 }
 
 .information, .information-item {
@@ -60,6 +61,13 @@ body, .information-item, .quote-container,
 
 .information-item {
     flex-basis: 140px;
+    align-items: center;
+}
+
+.call-to-action {
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
 }
 
 .header, .hero-container {
@@ -74,15 +82,21 @@ body, .information-item, .quote-container,
     color: #F9FAF8;
 }
 
+.hero-image {
+    margin-left: 100px;
+}
+
 #main-hero-text {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+    padding: 0;
 }
 
 #secondary-hero-text, .links {
     font-size: 18px;
-    color: #E5E7EB
+    color: #E5E7EB;
+    margin-bottom: 15px;
 }
 
 .hero-container {
@@ -95,6 +109,20 @@ body, .information-item, .quote-container,
 
 .sign-up {
     background-color: #3882F6;
+    color: white;
+    font-size: 17px;
+    border: none;
+    padding: 6px 24px;
+    border-radius: 10px;
+}
+
+#action-button {
+    border: 3px solid white;
+}
+
+.info-image {
+    border: 3px solid #3882F6;
+    border-radius: 10px;
 }
 
 .footer {
@@ -113,9 +141,10 @@ body, .information-item, .quote-container,
 .call-to-action {
     background-color: #3882F6;
     color: #F9FAF8;
-    width: 700px;
-    height: 100px;
-    margin: 50px;
+    width: 800px;
+    height: 120px;
+    margin: 70px;
+    border-radius: 10px;
 }
 
 .header, .hero-container * {
@@ -131,4 +160,8 @@ body, .information-item, .quote-container,
     padding: 0;
     gap: 20px;
     list-style: none;
+}
+
+.footer {
+    color: white;
 }
